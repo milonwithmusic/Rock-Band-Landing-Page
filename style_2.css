@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+@font-face {
+    font-family: Metal Mania Firoz;
+    src: url('Fonts/Metal_Mania/MetalMania-Regular.ttf');
+}
+
+@font-face {
+    font-family: Booterzz;
+    src: url("Fonts/booter/BOOTERZZ.ttf");
+    font-weight:normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family:Raleway;
+    color:#777;
+
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+
+    text-align: center;
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+.nav a:hover {
+    background-color: rgba(255,255,255,.4);
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Nothing will happen because by default we can use either bg color or bg image
+    so we need to use bg blend*/ 
+    /* !this is fukcing interesting!  */
+    background-image: url("images/Band_Performance.avif");
+    background-blend-mode: multiply;
+    background-size:cover;
+    padding-bottom: 30px;
+    /* todo it strecthed the image (covered the width) */
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    font-family: "Booterzz";
+    font-weight: normal;
+    color: white;
+}
+
+.ban-name-large {
+    font-size: 10em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+
+}
+
+.section-header {
+    font-family: 'Metal Mania Firoz';
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56CBF2;
+    color: white;
+    padding: .25em 0;
+
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li {
+    padding: 0 .5em;
+}
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0%;
+    font-size: 1.5em;
+    font-weight: light;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
